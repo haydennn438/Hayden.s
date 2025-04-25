@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto Typing Square</title>
+  <style>
+    #square {
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      box-sizing: border-box;
+      font-size: 16px;
+      padding: 10px;
+      overflow: auto;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Editable square -->
+  <div id="square" contenteditable="true"></div>
+
+  <script>
+    const square = document.getElementById('square');
+
+    // Automatically type "hh" every second
+    setInterval(() => {
+      square.innerText += "hh";
+    }, 100);
+  </script>
+
+</body>
+</html>
